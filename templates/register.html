@@ -1,0 +1,41 @@
+{%extends "base.html"%}
+
+{%block title%}Register page{%endblock%}
+
+{%block content%}
+<div class="register">
+    
+  <div class="sidebar">
+  <div class="sidebarbuttons">
+    <a href="/getdata"><button class="sidebarbutton">Dashboard</button></a>
+    <a href="/register"><button class="sidebarbutton">Insert</button></a>
+    <a href="/logout"><button class="sidebarbutton">Logout</button></a>   
+  </div>    
+  </div>
+
+  <div class="regbody">
+    <h1>Welcome to Employee Details Insert page</h1>
+    <div class="registerform">
+    <form action="/insert" method="POST">
+      <table>
+          <tr><td><label for="name">Employee Id</label></td><td>:</td><td><input type="text" name="id" required></td></tr>
+          <tr><td><label for="name">Employee Name</label></td><td>:</td><td><input type="text" name="name" required></td></tr>
+          <tr><td><label for="name">Age</label></td><td>:</td><td><input type="text" name="age"></td></tr>
+          <tr><td><label for="name">Gender</label></td><td>:</td><td><input type="radio" name="gender" value="Male" class="radio">Male
+                                                                      <input type="radio" name="gender" value="Female" class="radio">Female
+                                                                      <input type="radio" name="gender" value="Other" class="radio">Other</td></tr>
+
+          <tr><td><label for="name">Date of Birth</label></td><td>:</td><td><input type="text" name="dob" type="date"></td></tr>
+          <tr><td><label for="name">Department</label></td><td>:</td><td><input type="text" name="department"></td></tr>
+          <tr><td><label for="name">Salary</label></td><td>:</td><td><input type="text" name="salary"></td></tr>
+          <tr><td><label for="name" type="password">Password</label></td><td>:</td><td><input type="password" name="password" placeholder="Password"></td></tr>
+          <tr><td><label for="name" type="password">Confirm Password</label></td><td>:</td><td><input type="password" name="cpassword" placeholder="Same as password"></td></tr>
+          <tr><td></td><td></td><td><button type="submit" class="tablebutton">Submit</button>&nbsp;&nbsp;&nbsp;<button type="reset" class="tablebutton">Reset</button></td></tr>
+      </table>
+    </form>
+    </div>
+  </div>
+</div>
+{%endblock%}
+
+

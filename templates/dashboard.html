@@ -1,0 +1,48 @@
+{%extends "base.html"%}
+
+{%block title%}Dashboard page{%endblock%}
+
+{%block content%}
+<div class="dashboard">
+  <div class="sidebar">
+    <div class="sidebarbuttons">
+      <a href="/getdata"><button class="sidebarbutton">Dashboard</button></a>
+      <a href="/register"><button class="sidebarbutton">Insert</button></a>
+      <a href="/logout"><button class="sidebarbutton">Logout</button></a>
+    </div>
+  </div>
+  <div class="dashbody">
+    <h1>Welcome to the Dashboard</h1>
+    <div class="dashdata">
+      <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>DOB</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+
+        {% for d in data %}
+        <tr>
+          <td>{{ d.id }}</td>
+          <td>{{ d.name }}</td>
+          <td>{{ d.age }}</td>
+          <td>{{ d.gender }}</td>
+          <td>{{ d.dob }}</td>
+          <td>{{ d.department }}</td>
+          <td>{{ d.salary }}</td>
+          <td><a href="/deletebyid/{{d.id}}"><button class="tablebutton">delete</button></a></td>
+          <td><a href="/updatebyid/{{d.id}}"><button class="tablebutton">update</button></a></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+  </div>
+
+{%endblock%}

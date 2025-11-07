@@ -1,0 +1,38 @@
+{%extends "base.html"%}
+
+{%block title%}Dashboard page{%endblock%}
+
+{%block content%}
+<section class="about-section" style="width: 80%; margin: 50px auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 20px rgba(0,0,0,0.1);">
+            <h2 style="text-align:center; color:#1e293b;">About This Project</h2>
+            <p style="font-size:18px; line-height:1.6; color:#334155;">
+                The <strong>Employee Management System</strong> is a dynamic web application designed to simplify and automate employee data handling within an organization.
+                This project is built using <strong>Flask</strong> (Python web framework) for the backend and connected to a <strong>MySQL</strong> database for data storage and management.
+            </p>
+
+            <h3 style="color:#2563eb;">Key Features:</h3>
+            <ul style="font-size:17px; color:#334155; line-height:1.8;">
+                <li>🟢 <strong>Insert Employee Data:</strong> Admins can easily add new employee records including name, email, department, and salary details.</li>
+                <li>🔵 <strong>Fetch Employee by ID:</strong> The system allows searching employee information using a unique Employee ID.</li>
+                <li>🟣 <strong>Update and Manage Records:</strong> Existing employee details can be modified securely and efficiently.</li>
+                <li>🟠 <strong>Session Management:</strong> A secure login system ensures that only authorized admins can access management features.</li>
+                <li>🟢 <strong>Responsive Interface:</strong> Clean and user-friendly UI designed with HTML, CSS, and Flask templates.</li>
+            </ul>
+
+            <h3 style="color:#2563eb;">Technology Stack:</h3>
+            <ul style="font-size:17px; color:#334155; line-height:1.8;">
+                <li>Backend: Flask (Python)</li>
+                <li>Frontend: HTML, CSS, and Jinja2 Templates</li>
+                <li>Database: MySQL</li>
+                <li>Session Handling: Flask Session Management</li>
+            </ul>
+
+            <p style="font-size:18px; line-height:1.6; color:#334155;">
+                This project demonstrates full CRUD operations (Create, Read, Update, Delete) on employee data while maintaining data integrity and security through Flask’s session handling and MySQL database connectivity.
+            </p>
+
+            <p style="text-align:center; font-weight:bold; color:#1e3a8a; margin-top:30px;">
+                💼 Efficient. Secure. Scalable. — The perfect solution for managing employee data dynamically.
+            </p>
+        </section>
+    {%endblock%}

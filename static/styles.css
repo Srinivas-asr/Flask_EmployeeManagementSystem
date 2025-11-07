@@ -1,0 +1,203 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(to left, #6a11cb, #2575fc); /* violet-blue gradient */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1 {
+    margin-left: 20px;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    gap: 50px;
+}
+
+.navbutton {
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+.navbutton:hover {
+    background-color: #e0e7ff;
+    transform: scale(1.1);
+}
+.navbutton:active {
+    background-color: #c7d2fe;
+    transform: scale(0.9);
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+    min-height: 75vh;
+    width: 100%;
+    background-color: #f3f4f6; /* soft neutral background */
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b; /* dark slate text */
+}
+
+footer {
+    margin: 0%;
+    padding: auto;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 58vh;
+    width: 80%;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(6, 6, 6, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userlogin, .adminlogin, .userdashboard {
+    width: 60%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+.adminlogincontent, .userlogincontent{
+    width: 40%;
+    margin: auto;
+}
+
+.dashboard, .register, .update, .userdashboardcontent{
+    display: flex;
+    flex-direction: row;
+    min-width: 75vh;
+    /* padding-bottom: 5%; */
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #1e293b; /* dark navy sidebar */
+    border-radius: 10px;
+    box-shadow: 5px 50px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    min-height: 75vh;
+}
+
+.sidebarbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sidebarbutton {
+    border: none;
+    background-color: #334155; /* slate gray */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sidebarbutton:hover {
+    background-color: #3b82f6; /* bright blue */
+    transform: scale(1.1);
+    color: #f8fafc;
+}
+
+.dashbody, .updatebody, .regbody {
+    width: 85%;
+    background-color: #e0f2fe; /* soft light blue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.registerform, .updateform {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+
+input {
+    margin: 5px;
+    width: 100%;
+    height: 15px;
+}
+
+.radio {
+    margin: 5px;
+    width: 20px;
+}
+
+tr td:first-child {
+    color: #1e3a8a; /* deep indigo */
+    font-weight: bold;
+}
+
+tr button, .userlogout {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #3b82f6; /* blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+tr button:hover, .userlogout:hover {
+    background-color: #2563eb; /* darker blue */
+    transform: scale(1.1);
+}
+
+tr button:active, .userlogout:active {
+    background-color: #1d4ed8;
+    transform: scale(0.9);
+}
+th {
+    padding: 10px;
+    background-color: #1e3a8a; /* indigo */
+    color: white;
+}
+
+.userlogout{
+    float: right;
+    top: 0;
+    margin-top:-5%;
+    margin-right: 2%;
+}

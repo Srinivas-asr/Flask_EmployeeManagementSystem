@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+
+{%block title%}Login page{%endblock%}
+
+{%block content%}
+<h1>Welcome to User Login page</h1>
+<div class="userlogin">
+    <div class="userlogincontent">   
+        <table>
+            <form action="/loginbyid" method="post">
+                <tr><td><label>Employee Id</label></td><td>:</td><td><input type="text" name="id"></td></tr>
+                <tr><td><label>Password</label></td><td>:</td><td><input type="text" name="password"></td></tr>
+                <tr><td></td><td></td><td><button type="submit" class="tablebutton">Login</button></td></tr>
+            </form>
+        </table>
+    </div>
+
+</div>
+
+{%endblock%}

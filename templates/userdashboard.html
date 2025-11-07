@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+
+{%block title%}Login page{%endblock%}
+
+{%block content%}
+<h1>Welcome {{user[0].name}}</h1>
+
+<button type="button" onclick="location.href='/'" class="userlogout">Logout</button>
+
+<div class="userdashboard">
+    <div class="userdashboardcontent">
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                {%for i in user%}
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.gender}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.department}}</td>
+                <td>{{i.salary}}</td>
+                <td>{{i.password}}</td>
+
+                {%endfor%}
+            </tr>
+        </table>
+    </div>
+</div>
+{%endblock%}
