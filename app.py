@@ -91,10 +91,7 @@ def GetData():
     data=cursor.fetchall()
     cursor.close()
     if 'username' in session:
-        if data:
-            return render_template('dashboard.html',data=data)
-        else:
-            return f"no data found"
+        return render_template('dashboard.html',data=data)
     else:
         return redirect("/adminlogin1")
 
